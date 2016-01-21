@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="LogitechSDK">
+      <UniqueIdentifier>{425916db-be28-4124-8938-fb61c6079612}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiBumpyRoadEffect.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiConstantForce.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiControllerForceManager.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiControllerInput.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiControllerInputUtils.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiControllerProperties.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiDamperForce.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiDirtRoadEffect.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiForce.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiFrontalCollisionEffect.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiGameController.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiGameControllerDI.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiGameControllerXInput.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiGamingSoftwareManager.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiLeds.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiSideCollisionEffect.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiSlipperyRoadEffect.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiSoftstopForce.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiSpringForce.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiSurfaceEffect.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiWheel.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="LogitechControllerSDK\LogiWheelUtils.cpp">
+      <Filter>LogitechSDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LogitechControllerSDK\LogiBumpyRoadEffect.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiConstantForce.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiControllerForceManager.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiControllerInput.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiControllerInputGlobals.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiControllerInputUtils.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiControllerProperties.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiDamperForce.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiDirtRoadEffect.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiForce.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiFrontalCollisionEffect.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiGameController.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiGameControllerDI.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiGameControllerXInput.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiGamingSoftwareManager.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiLeds.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiSideCollisionEffect.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiSlipperyRoadEffect.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiSoftstopForce.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiSpringForce.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiSurfaceEffect.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiWheel.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiWheelGlobals.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="LogitechControllerSDK\LogiWheelUtils.h">
+      <Filter>LogitechSDK</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
