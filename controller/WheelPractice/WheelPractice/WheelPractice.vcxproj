@@ -87,6 +87,7 @@
     <ClCompile Include="LogitechControllerSDK\LogiWheel.cpp" />
     <ClCompile Include="LogitechControllerSDK\LogiWheelUtils.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="wheelApi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LogitechControllerSDK\LogiBumpyRoadEffect.h" />
@@ -113,6 +114,7 @@
     <ClInclude Include="LogitechControllerSDK\LogiWheel.h" />
     <ClInclude Include="LogitechControllerSDK\LogiWheelGlobals.h" />
     <ClInclude Include="LogitechControllerSDK\LogiWheelUtils.h" />
+    <ClInclude Include="wheelApi.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

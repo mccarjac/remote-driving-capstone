@@ -43,6 +43,9 @@ int main(int argc, char** argv) {
 		w = g_wheel->GetState(0)->lRz;
 		std::cout << "Break: " << w << std::endl;
 
+		w = g_wheel->GetState(0)->rgdwPOV[0];
+		std::cout << "Dpad: " << w << std::endl;
+
 		Sleep(100);
 	}
 }
