@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2DEBC9DE-F086-48EE-BA9A-7A1C90772E62}</ProjectGuid>
+    <RootNamespace>WheelPractice</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>ControlStation</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>xinput.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="LogitechControllerSDK\LogiBumpyRoadEffect.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiConstantForce.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiControllerForceManager.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiControllerInput.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiControllerInputUtils.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiControllerProperties.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiDamperForce.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiDirtRoadEffect.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiForce.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiFrontalCollisionEffect.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiGameController.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiGameControllerDI.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiGameControllerXInput.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiGamingSoftwareManager.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiLeds.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiSideCollisionEffect.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiSlipperyRoadEffect.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiSoftstopForce.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiSpringForce.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiSurfaceEffect.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiWheel.cpp" />
+    <ClCompile Include="LogitechControllerSDK\LogiWheelUtils.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="wheelApi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LogitechControllerSDK\LogiBumpyRoadEffect.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiConstantForce.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiControllerForceManager.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiControllerInput.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiControllerInputGlobals.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiControllerInputUtils.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiControllerProperties.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiDamperForce.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiDirtRoadEffect.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiForce.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiFrontalCollisionEffect.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiGameController.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiGameControllerDI.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiGameControllerXInput.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiGamingSoftwareManager.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiLeds.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiSideCollisionEffect.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiSlipperyRoadEffect.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiSoftstopForce.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiSpringForce.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiSurfaceEffect.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiWheel.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiWheelGlobals.h" />
+    <ClInclude Include="LogitechControllerSDK\LogiWheelUtils.h" />
+    <ClInclude Include="wheelApi.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
