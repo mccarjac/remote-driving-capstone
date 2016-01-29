@@ -10,6 +10,14 @@
 using namespace LogitechControllerInput;
 using namespace LogitechSteeringWheel;
 
+struct wheelInputs {
+	bool* buttons;
+	int wheel;
+	int gas;
+	int breaks;
+	int dpad;
+};
+
 class wheelApi {
 public:
 	wheelApi();
@@ -21,6 +29,7 @@ public:
 	int getDpad();
 	int getShifter();
 	void update();
+	wheelInputs getAll();
 private:
 	ControllerInput* g_controllerInput;
 	Wheel* g_wheel;
@@ -33,5 +42,4 @@ private:
 	int breaks;
 	int dpad;
 };
-
 #endif
