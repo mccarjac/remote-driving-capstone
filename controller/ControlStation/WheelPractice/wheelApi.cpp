@@ -118,6 +118,15 @@ int wheelApi::getShifter() {
 	return s;
 }
 
+// Check if a controller is connected
+bool wheelApi::isConnected() {
+	DWORD waitResult = WaitForSingleObject(mutex, 100);
+	bool b = g_wheel->IsConnected;
+	ReleaseMutex(mutex);
+
+	return b;
+}
+
 // Pulls data from the wheel and updates the class members
 void wheelApi::update() {
 	DWORD waitResult = WaitForSingleObject(mutex, 100);

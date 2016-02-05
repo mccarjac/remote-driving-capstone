@@ -28,6 +28,7 @@ public:
 	int getBreaks();
 	int getDpad();
 	int getShifter();
+	bool isConnected();
 	void update();
 	wheelInputs getAll();
 private:
