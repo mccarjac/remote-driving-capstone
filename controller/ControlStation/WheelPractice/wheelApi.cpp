@@ -44,7 +44,10 @@ wheelApi::~wheelApi() {
 // Returns the array of bools that indicate if a button is pressed
 bool* wheelApi::getButtons() {
 	DWORD waitResult = WaitForSingleObject(mutex, 100);
-	bool* b = buttons;
+	bool* b = new bool[23];
+	for (int i = 0; i < 23; i++) {
+		b[i] = buttons[i];
+	}
 	ReleaseMutex(mutex);
 
 	return b;
@@ -71,12 +74,12 @@ int wheelApi::getWheel() {
 
 	return w;
 }
-// Returns the int value of the breaks
+// Returns the int value of the brakes
 // 32676 is not pressed
 // -32678 is fully pressed
-int wheelApi::getBreaks() {
+int wheelApi::getBrakes() {
 	DWORD waitResult = WaitForSingleObject(mutex, 100);
-	int b = breaks;
+	int b = brakes;
 	ReleaseMutex(mutex);
 
 	return b;
@@ -121,7 +124,7 @@ int wheelApi::getShifter() {
 // Check if a controller is connected
 bool wheelApi::isConnected() {
 	DWORD waitResult = WaitForSingleObject(mutex, 100);
-	bool b = g_wheel->IsConnected;
+	bool b = g_wheel->IsConnected(0);
 	ReleaseMutex(mutex);
 
 	return b;
@@ -147,8 +150,8 @@ void wheelApi::update() {
 	// Check gas
 	gas = g_wheel->GetState(0)->lY;
 
-	// Check break
-	breaks = g_wheel->GetState(0)->lRz;
+	// Check brake
+	brakes = g_wheel->GetState(0)->lRz;
 
 	// Check Dpad
 	dpad = g_wheel->GetState(0)->rgdwPOV[0];
@@ -162,7 +165,7 @@ wheelInputs wheelApi::getAll() {
 
 	// Use the get functions to avoid race conditions
 	w.buttons = getButtons();
-	w.breaks = getBreaks();
+	w.brakes = getBrakes();
 	w.dpad = getDpad();
 	w.gas = getGas();
 	w.wheel = getWheel();

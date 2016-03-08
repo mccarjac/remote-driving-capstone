@@ -16,6 +16,13 @@ int main(int argc, char** argv) {
 		exit(-1);
 	}
 
+	while (true) {
+		wheelInputs a = w.getAll();
+		system("cls");
+		a.print();
+		Sleep(50);
+	}
+
 	// Open connection to vehicle
 
 	// Start stream wheel data

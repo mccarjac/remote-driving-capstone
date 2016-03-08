@@ -7,6 +7,7 @@
 #include "LogitechControllerSDK\LogiControllerInput.h"
 #include "LogitechControllerSDK\LogiWheel.h"
 
+using namespace std;
 using namespace LogitechControllerInput;
 using namespace LogitechSteeringWheel;
 
@@ -14,8 +15,17 @@ struct wheelInputs {
 	bool* buttons;
 	int wheel;
 	int gas;
-	int breaks;
+	int brakes;
 	int dpad;
+	void print() {
+		for (int i = 0;i < 23;i++) {
+			cout << "Button " << i << ": " << buttons[i] << endl;
+		}
+		cout << "Wheel: " << wheel << endl;
+		cout << "Gas: " << gas << endl;
+		cout << "Brakes: " << brakes << endl;
+		cout << "Dpad: " << dpad << endl;
+	}
 };
 
 class wheelApi {
@@ -25,7 +35,7 @@ public:
 	bool* getButtons();
 	int getWheel();
 	int getGas();
-	int getBreaks();
+	int getBrakes();
 	int getDpad();
 	int getShifter();
 	bool isConnected();
@@ -40,7 +50,7 @@ private:
 	bool* buttons;
 	int wheel;
 	int gas;
-	int breaks;
+	int brakes;
 	int dpad;
 };
 #endif
