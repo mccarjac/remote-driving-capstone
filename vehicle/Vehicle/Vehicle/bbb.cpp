@@ -6,6 +6,7 @@ BBBApi::BBBApi() {
 }
 
 BBBApi::~BBBApi() {
+    send(ConnectSocket, "quit", (int)strlen("quit"), 0);
     closesocket(ConnectSocket);
 }
 
@@ -73,21 +74,28 @@ void BBBApi::Connect() {
     }
 }
 
-void BBBApi::Send(wheelInputs i) {
-    string sendbuf;
-    while (true) {
-        cout << "Enter msg: ";
-        cin >> sendbuf;
-
-        iResult = send(ConnectSocket, sendbuf.c_str(), (int)strlen(sendbuf.c_str()), 0);
-        if (iResult == SOCKET_ERROR) {
-            printf("send failed with error: %d\n", WSAGetLastError());
-            closesocket(ConnectSocket);
-            WSACleanup();
-            exit(1);
+void BBBApi::Send(wheelInputs ins) {
+    string sendbuf = "";
+    //Add buttons
+    for(int i = 0;i < 23;i++) {
+        if (ins.buttons[i]) {
+            sendbuf += "1";
         }
-        if (sendbuf == "quit") {
-            break;
+        else {
+            sendbuf += "0";
         }
     }
+    sendbuf += " " + to_string(ins.gas) + " ";
+    sendbuf += to_string(ins.wheel) + " ";
+    sendbuf += to_string(ins.brakes) + " ";
+    sendbuf += to_string(ins.dpad) + " ";
+   
+    iResult = send(ConnectSocket, sendbuf.c_str(), (int)strlen(sendbuf.c_str()), 0);
+    if (iResult == SOCKET_ERROR) {
+        printf("send failed with error: %d\n", WSAGetLastError());
+        closesocket(ConnectSocket);
+        WSACleanup();
+        exit(1);
+    }
+    Sleep(10);
 }
