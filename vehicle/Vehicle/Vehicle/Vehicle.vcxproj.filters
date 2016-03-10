@@ -24,6 +24,9 @@
     <ClCompile Include="bbb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="socket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bbb.h">
@@ -51,6 +54,9 @@
       <Filter>libssh</Filter>
     </ClInclude>
     <ClInclude Include="wheelApi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="socket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

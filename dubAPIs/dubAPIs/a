@@ -1,0 +1,35 @@
+[33mcommit 228e032a1bf9d18b86ef215c128842ebdf7fe2f1[m
+Author: Jacob McCarthy <mccarjac@gmail.com>
+Date:   Sun Feb 28 15:06:26 2016 -0800
+
+    Unspliced Singular image
+
+[33mcommit c79adb666cc6ac80a905d3159bac92e470f3f1e0[m
+Author: Jacob McCarthy <mccarjac@gmail.com>
+Date:   Wed Feb 10 16:23:20 2016 -0800
+
+    Current realsenseCapture
+
+[33mcommit 09bfddd0ed46a28f6045477a04c3a929b4217e9c[m
+Author: Jacob McCarthy <mccarjac@gmail.com>
+Date:   Mon Feb 8 18:19:48 2016 -0800
+
+    Fixed exponential memory increase and polished code
+
+[33mcommit e3d3e7cd8f7e3c0770095b353d8bcf4e45b637b7[m
+Author: Jacob McCarthy <mccarjac@gmail.com>
+Date:   Sat Feb 6 16:07:06 2016 -0800
+
+    Got PXCImage converted to Mat and displayed
+
+[33mcommit e5b4ed3af9b6c50dc2af14b44965b989c77e4b57[m
+Author: Jacob McCarthy <mccarjac@gmail.com>
+Date:   Sat Feb 6 12:57:23 2016 -0800
+
+    Dividing code into functions
+
+[33mcommit cf6d809a94564ce320653a8541f7807865c8d559[m
+Author: Jacob McCarthy <mccarjac@gmail.com>
+Date:   Sat Feb 6 12:43:54 2016 -0800
+
+    inital commit

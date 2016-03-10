@@ -1,0 +1,10 @@
+﻿  Source.cpp
+C:\OpenCV\build\include\CinderOpenCV.h(50): warning C4267: '=' : conversion from 'size_t' to 'int32_t', possible loss of data
+Source.cpp(135): warning C4101: 'camTwo' : unreferenced local variable
+Source.cpp(217): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+Source.cpp(218): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+Source.cpp(339): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     Creating library C:\Users\Group34\Documents\Visual Studio 2013\Projects\dubAPIs\x64\Release\dubAPIs.lib and object C:\Users\Group34\Documents\Visual Studio 2013\Projects\dubAPIs\x64\Release\dubAPIs.exp
+  Generating code
+  Finished generating code
+  dubAPIs.vcxproj -> C:\Users\Group34\Documents\Visual Studio 2013\Projects\dubAPIs\x64\Release\dubAPIs.exe

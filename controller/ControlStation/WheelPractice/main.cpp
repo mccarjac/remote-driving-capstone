@@ -1,8 +1,10 @@
 #include <iostream>
 
+#include "mySocket.h"
 #include "LogitechControllerSDK\LogiControllerInput.h"
 #include "LogitechControllerSDK\LogiWheel.h"
 #include "wheelApi.h"
+
 
 using namespace LogitechControllerInput;
 using namespace LogitechSteeringWheel;
@@ -16,16 +18,15 @@ int main(int argc, char** argv) {
 		exit(-1);
 	}
 
-	while (true) {
-		wheelInputs a = w.getAll();
-		system("cls");
-		a.print();
-		Sleep(50);
-	}
+    wheelInputs a;
 
 	// Open connection to vehicle
-
+    mySocket soc;
 	// Start stream wheel data
-
+    while (true) {
+        a = w.getAll();
+        soc.Send(a);
+        Sleep(1000);
+    }
 	// Start recieving and displaying video
 }

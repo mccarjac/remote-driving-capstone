@@ -112,6 +112,7 @@
   <ItemGroup>
     <ClCompile Include="bbb.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="socket.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bbb.h" />
@@ -122,6 +123,7 @@
     <ClInclude Include="libssh\server.h" />
     <ClInclude Include="libssh\sftp.h" />
     <ClInclude Include="libssh\ssh2.h" />
+    <ClInclude Include="socket.h" />
     <ClInclude Include="wheelApi.h" />
   </ItemGroup>
   <ItemGroup>
