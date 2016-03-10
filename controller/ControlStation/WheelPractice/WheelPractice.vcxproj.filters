@@ -90,6 +90,9 @@
     <ClCompile Include="wheelApi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mySocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LogitechControllerSDK\LogiBumpyRoadEffect.h">
@@ -165,6 +168,9 @@
       <Filter>LogitechSDK</Filter>
     </ClInclude>
     <ClInclude Include="wheelApi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mySocket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
