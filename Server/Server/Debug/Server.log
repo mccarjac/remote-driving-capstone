@@ -1,0 +1,23 @@
+﻿Server.obj : error LNK2019: unresolved external symbol "void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPAX@Z) referenced in function "public: __thiscall cv::Mat::~Mat(void)" (??1Mat@cv@@QAE@XZ)
+Server.obj : error LNK2019: unresolved external symbol "private: char * __thiscall cv::String::allocate(unsigned int)" (?allocate@String@cv@@AAEPADI@Z) referenced in function "public: __thiscall cv::String::String(char const *)" (??0String@cv@@QAE@PBD@Z)
+Server.obj : error LNK2019: unresolved external symbol "private: void __thiscall cv::String::deallocate(void)" (?deallocate@String@cv@@AAEXXZ) referenced in function "public: __thiscall cv::String::~String(void)" (??1String@cv@@QAE@XZ)
+Server.obj : error LNK2019: unresolved external symbol "void __cdecl cv::error(int,class cv::String const &,char const *,char const *,int)" (?error@cv@@YAXHABVString@1@PBD1H@Z) referenced in function "public: __thiscall cv::Mat::Mat(int,int,int,void *,unsigned int)" (??0Mat@cv@@QAE@HHHPAXI@Z)
+Server.obj : error LNK2019: unresolved external symbol "public: void __thiscall cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QAEXXZ) referenced in function "public: void __thiscall cv::Mat::release(void)" (?release@Mat@cv@@QAEXXZ)
+Server.obj : error LNK2019: unresolved external symbol "class cv::Mat __cdecl cv::imdecode(class cv::_InputArray const &,int)" (?imdecode@cv@@YA?AVMat@1@ABV_InputArray@1@H@Z) referenced in function _main
+Server.obj : error LNK2019: unresolved external symbol "void __cdecl cv::imshow(class cv::String const &,class cv::_InputArray const &)" (?imshow@cv@@YAXABVString@1@ABV_InputArray@1@@Z) referenced in function _main
+C:\OpenCV\build\lib\Release\opencv_core310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_highgui310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_calib3d310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_imgcodecs310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_videoio310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_video310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_imgproc310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_features2d310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_xfeatures2d310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_flann310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_ml310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_objdetect310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_photo310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_shape310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\OpenCV\build\lib\Release\opencv_stitching310.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+C:\Users\Group34\documents\visual studio 2015\Projects\Server\Debug\Server.exe : fatal error LNK1120: 7 unresolved externals

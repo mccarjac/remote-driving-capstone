@@ -1,0 +1,14 @@
+﻿Build started 2/1/2016 12:35:48 AM.
+     1>Project "C:\Users\Group34\documents\visual studio 2013\Projects\dubAPIs\dubAPIs\dubAPIs.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IC:\OpenCV\build\lib\Release /IC:\OpenCV\build\include\opencv2 /I"C:\Program Files (x86)\Intel\PCSDK\sample\common\lib\x64\v120" /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "..\..\OpenCV-Test\OpenCV-Test\IntelSDK\pxcmsensemanager.cpp" Source.cpp
+         Source.cpp
+     1>Source.cpp(1): fatal error C1083: Cannot open include file: 'opencv2/videoio.hpp': No such file or directory
+         pxcmsensemanager.cpp
+     1>..\..\OpenCV-Test\OpenCV-Test\IntelSDK\pxcmsensemanager.cpp(10): fatal error C1083: Cannot open include file: 'cpp2c.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Users\Group34\documents\visual studio 2013\Projects\dubAPIs\dubAPIs\dubAPIs.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.12
